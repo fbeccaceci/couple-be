@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/couple
+    username: cryptoway
+    password: cryptoway
+
+  jpa:
+    hibernate:
+      ddl-auto: none
+
+logging:
+  level:
+    org.springframework.security: INFO
+
+app:
+  jwt:
+    secret: "609ddfc856430989b4fdccf8503e0ab0b91814f7447d90d8c36ba7ff9f21ebfe"
+    expiration-time: 600000
